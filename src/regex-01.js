@@ -51,7 +51,7 @@ function testStringOr(str, arr) {
  * ? must create a regular expression using the constructor function new RegExp()
  */
 function testStringIgnoreCase(str, match) {
-  const regex = new RegExp(match, "i");
+  const regex = new RegExp(match, 'i');
   return regex.test(str);
 }
 
@@ -94,7 +94,7 @@ function replaceVowels(str, ch) {
  * ? must create a regular expression using the constructor function new RegExp()
  */
 function isPrefix(str, prefix) {
-  const regex = new RegExp(`^${prefix}`, "i");
+  const regex = new RegExp(`^${prefix}`, 'i');
   return regex.test(str);
 }
 
